@@ -1,0 +1,36 @@
+name: Build app and deploy to aliyun
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+      - name: npm install
+        run: npm install
+      # 运行构建脚本
+      - name: Build VitePress site
+        run: npm run docs:build
+      # 部署到阿里云
+      - name: Deploy to Aliyun
+        uses: easingthemes/ssh-deploy@main
+        env:
+          # 私钥
+          SSH_PRIVATE_KEY: ${{ secrets.BSF_SERVER_SECRET }}
+          # scp参数
+          ARGS: "-avzr --delete"
+          # 源目录，编译后生成的文件目录
+          SOURCE: "./docs/.vitepress/dist/"
+          # 服务器ip：换成你的服务器IP
+          REMOTE_HOST: "${{ secrets.BSF_SERVER_HOST }}"
+          # 用户
+          REMOTE_USER: "root"
+          # 目标地址 你在服务器上部署代码的地方
+          TARGET: "/www/byteee-fund-docs/cordova-plugin-alipay"
