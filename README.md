@@ -3,7 +3,7 @@ English | [中文](README_zh.md)
 
 # About the Project
 
-`cordova-plugin-alipay` is a Cordova plugin based on Alipay's OpenSDK. It implements essential interfaces such as Alipay SDK authentication and payment.
+`cordova-plugin-alipay` is a Cordova plugin based on Alipay OpenSDK. It implements essential interfaces such as Alipay SDK authentication and payment.
 
 - [Home](https://byteee.fund/project/cordova-plugin-alipay)
 - [Documentation](https://byteee.fund/doc/cordova-plugin-alipay)
@@ -24,7 +24,7 @@ English | [中文](README_zh.md)
 ## Compatibility
 
 - [x] Cordova
-- [x] Capacitor
+- [x] Capacitor/Ionic
 
 ## License
 

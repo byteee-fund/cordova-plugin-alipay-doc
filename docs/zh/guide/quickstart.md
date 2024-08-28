@@ -25,7 +25,7 @@
 ### 本地安装
 
 ```shell
-cordova plugin add ../cordova-lugin-alipay
+cordova plugin add ../cordova-lugin-alipay --variable ALIPAY_APP_ID=xxx
 ```
 
 
@@ -33,19 +33,5 @@ cordova plugin add ../cordova-lugin-alipay
 ## 移除插件
 
 ```shell
-cordova plugin rm cordova-plugin-alipay 
+cordova plugin rm cordova-plugin-alipay --variable ALIPAY_APP_ID=xxx
 ```
-
-
-
-## Capacitor/Ionic
-
-```shell
-npm install ../cordova-lugin-alipay
-```
-
-
-
-
-
- 
