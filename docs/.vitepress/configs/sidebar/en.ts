@@ -8,6 +8,7 @@ export const sidebarEn: Sidebar = {
       items: [
         {text: "About", link: "/guide/index.md"},
         {text: "Quickstart", link: "/guide/quickstart.md"},
+        {text: "Capacitor/Ionic", link: "/guide/capacitor.md"},
         {text: "Troubleshooting", link: "/guide/troubleshooting.md"},
         {text: "Errcode", link: "/guide/errcode.md"},
         {text: "Changelog", link: "/guide/changelog.md"}

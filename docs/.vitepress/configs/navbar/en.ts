@@ -19,4 +19,8 @@ export const navbarEn: NavItem[] = [
       },
     ],
   },
+  {
+    text: 'Capacitor/Ionic',
+    link: "/guide/capacitor.md"
+  },
 ]

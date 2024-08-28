@@ -13,9 +13,16 @@
 - Node.js
 - Cordova
 
-## Install the Plugin
+## Install Plugin
 
 ### Local Installation
 
 ```shell
-cordova plugin add ../cordova-plugin-alipay
+cordova plugin add ../cordova-plugin-alipay --variable ALIPAY_APP_ID=xxx
+```
+
+## Remove Plugin
+
+```shell
+cordova plugin remove cordova-plugin-alipay --variable ALIPAY_APP_ID=xxx
+```
